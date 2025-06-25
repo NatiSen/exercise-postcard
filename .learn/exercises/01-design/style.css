@@ -1,0 +1,111 @@
+/* The style for my first digital postcard */
+
+body {
+	background-color: rgb(241, 187, 229);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding: 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+
+h1 {
+	color: purple;
+	text-align: left;
+	text-shadow: 2px 2px 4px gray;
+	margin-left: 40px;
+}
+
+p {
+	font-size: medium;
+	line-height: 2;
+	color: black;
+	text-align: justify;
+}
+
+.postcard {
+	max-width: 700px;
+	margin: 50px auto;
+	padding: 30px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	border: 2px solid purple;
+	text-align: center;
+}
+
+.postcard-content {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.left,
+.right {
+	width: 50%;
+}
+
+.right {
+	margin-left: 200px;
+	position: relative;
+	padding-top: 90px;
+}
+
+.left {
+	margin-left: 40px;
+	height: auto;
+}
+
+.left p,
+.right p {
+	text-align: left;
+}
+
+.stamp {
+	position: absolute;
+	top: -55px;
+	right: 0px;
+	width: 80px;
+	height: auto;
+	border: 2px solid purple;
+	border-radius: 4px;
+}
+
+.address-line {
+	border-bottom: 1px solid purple;
+	width: 100%;
+	height: 20px; /* wysokość "linii" */
+	margin-bottom: 10px;
+}
+
+.address-field {
+	margin-bottom: 15px;
+}
+
+.address-field label {
+	font-size: 14px;
+	color: purple;
+	display: block;
+	margin-bottom: 4px;
+}
+
+.postcard-btn {
+	display: inline-block;
+	/* MY code below */
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	background: purple;
+	box-shadow: 2px 2px 6px rgba(72, 71, 71, 0.3);
+}
+
+.postcard-btn:hover {
+	/* MY CODE HERE FOR THE HOVER STATE */
+	background: rgb(233, 175, 237);
+	color: rgb(99, 26, 99);
+	text-align: center;
+	border: 2px solid purple;
+	transition: all 0.3s ease;
+}
